@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>IKAE</title>
+</head>
+<body>
+<div id="img">
+    <img src="images/logo.png" alt="logo" class="logo">
+  <div class="banner-text">
+      <h1>Fresh Furniture</h1>
+  </div>
+</div>
+<div id="side-navbar">
+    <nav>
+        <ul id="nav-menu">
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Collection</a></li>
+            <li><a href="3">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><i class="fas fa-search"></i></li>
+        </ul>
+    </nav>
+</div>
+<div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+
+<script>
+    let menuBtn = document.querySelector('.hamburger');
+    let navMenu = document.getElementsByClassName('nav-menu');
+
+    menuBtn.addEventListener("click", mobileMenu);
+    function  mobileMenu(){
+
+            menuBtn.classList.toggle('active');
+             let btn = document.getElementById("nav-menu");
+             btn.classList.toggle('active')
+
+    }
+</script>
+<!--        -->
+    <div class="container">
+        <div class="about pt-5">
+            <h1 class="pb-3">About us</h1>
+            <div class="row" style="color: #a4a4a4">
+                <div class="col-lg-4">
+                    <h5>We provide a good furniture</h5>
+                    <br>
+                    <p style="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        It has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Our specialization</h5>
+                    <br>
+                    <div class="first pb-2">
+                        <img src="images/first.png" alt="delivery" style="max-width: 2em">
+                        <br>
+                        <h6>DELIVERY</h6>
+                    </div>
+                    <div class="second pb-2">
+                        <img src="images/support.png" alt="delivery" style="max-width: 2em">
+                        <br>
+                        <h6>SUPPORT</h6>
+                    </div>
+                    <div class="third pb-2">
+                        <img src="images/montage.png" alt="delivery" style="max-width: 2em">
+                        <br>
+                        <h6>MONTAGE</h6>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="images/image.jpg" alt="image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-part mt-5" style="background: #f3f3f3;">
+        <br>
+        <h3 class="" style="padding-left: 5em">Categories</h3>
+        <br>
+        <div class="row">
+            <div class="col-lg-3 cat" style="position: relative">
+                <img src="images/bathroom.jpg" alt="bathroom" class="img-fluid " style="height: 100%">
+                <div class="center-text">
+                    Bathroom
+                </div>
+            </div>
+            <div class="col-lg-3 cat" style="position: relative">
+                <img src="images/kitchen.jpg" alt="bathroom" class="img-fluid image">
+                <div class="center-text">
+                    Kitchen
+                </div>
+            </div>
+            <div class="col-lg-3 cat" style="position: relative">
+                <img src="images/bedroom.jpg" alt="bathroom" class="img-fluid image">
+                <div class="center-text">
+                    Bedroom
+                </div>
+            </div>
+            <div class="col-lg-3 cat" style="position: relative">
+                <img src="images/livingroom.jpg" alt="bathroom" class="img-fluid image" style="height: 100%">
+                <div class="center-text">
+                    Living room
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center pt-5 pb-3 m-0">© IKEM 2021 | All right reserved. </p>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
